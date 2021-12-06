@@ -1,0 +1,382 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-font: 'Roboto';
+  --card-set-gap: 30px;
+  --first-fon-color: #2f303a;
+  --second-fon-color: #f5f4fa;
+}
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+/* Стилі шапки */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.studio {
+  color: #000;
+}
+
+/* Навігація */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.contact-link {
+  display: flex;
+  margin-left: auto;
+}
+.contact-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-link .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.nav-link .link:hover,
+.nav-link .link:focus {
+  color: var(--accent-color);
+}
+.nav-link .link.current {
+  color: var(--accent-color);
+}
+
+.contact-link .link:hover,
+.contact-link .link:focus {
+  color: var(--accent-color);
+}
+.header-box {
+  border-bottom: 1px solid #ececec;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Герой */
+.background {
+  background-color: var(--first-fon-color);
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #ffffff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+  color: #ffffff;
+}
+
+/* Переваги  */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-set {
+  display: flex;
+}
+
+.benefits-set .benefits {
+  width: 270px;
+}
+.benefits:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits .start {
+  text-align: start;
+}
+.section-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.work-section {
+  padding-bottom: 94px;
+}
+.work {
+  display: flex;
+}
+.work .indent:not(:last-child) {
+  margin-right: 30px;
+}
+.list {
+  display: flex;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.section-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.color {
+  background-color: var(--second-fon-color);
+}
+.section-head {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.frames {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.frames:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--first-fon-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adress-citi {
+  margin-bottom: 9px;
+}
+
+.size:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.info {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.studio-white {
+  color: #ffffff;
+}
+.info:hover,
+.info:focus {
+  color: #ffffff;
+}
+/* Css портфоліо */
+
+.section-form {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.button-knobs {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--second-fon-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.button-set .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-set {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-knobs:hover,
+.button-knobs:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.button-knobs {
+  cursor: pointer;
+}
+
+.card-set {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+.card-set .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  background: #ffffff;
+}
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.foto-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.resource {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+
+  color: var(--primary-text-color);
+}
+.foto-title:hover,
+.foto-title:focus {
+  color: var(--accent-color);
+}
+.resource:hover,
+.resource:focus {
+  color: var(--accent-color);
+}
