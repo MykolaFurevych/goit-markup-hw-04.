@@ -34,9 +34,21 @@
 
         <ul class="contact-link">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="mail-icon">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 96 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="tel-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 96 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -54,7 +66,7 @@
 
           <ul class="card-set">
             <li class="item">
-              <a href=""
+              <a href="" class="foto-hover"
                 ><img src="./imgportfolio/img-1.jpg" class="foto" alt="Технокряк" width="370" />
                 <div class="card-content">
                   <h2 class="foto-title">Технокряк</h2>
@@ -142,18 +154,55 @@
         </div>
       </section>
     </main>
+    <!-- Підвал -->
     <footer class="footer">
-      <div class="container">
-        <a href="" class="logo">Web<span class="studio-white">Studio</span></a>
-        <address class="address">
-          <p class="adress-citi">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul>
-            <li class="size">
-              <a href="mailto:info@example.com" class="info">info@example.com</a>
+      <div class="container container-wrap">
+        <div class="address-footer">
+          <a href="" class="logo">Web<span class="studio-white">Studio</span></a>
+          <address class="address">
+            <p class="adress-citi">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="">
+              <li class="size">
+                <a href="mailto:info@example.com" class="info">info@example.com</a>
+              </li>
+              <li class="size"><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="box-link-mesenger">
+          <h3 class="section-title footer-text">Присоединяйтесь</h3>
+
+          <ul class="footer-icon">
+            <li class="mesenger">
+              <a href="" class="link-mesenger bgc">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="size"><a href="tel:+380991111111" class="info">+38 099 111 11 11</a></li>
+            <li class="mesenger">
+              <a href="" class="link-mesenger bgc">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mesenger">
+              <a href="" class="link-mesenger bgc">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mesenger">
+              <a href="" class="link-mesenger bgc">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
